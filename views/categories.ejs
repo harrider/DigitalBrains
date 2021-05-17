@@ -1,0 +1,16 @@
+<%- include('partials/header.ejs') -%>
+
+    <div class="list-group mt-3">
+        <% categories.forEach(category => { %>
+
+            <a href="/flashcards/<%= category %>" class="list-group-item list-group-item-action flex-column">
+                <div class="d-flex w-100 justify-content-between">
+                    <h5 class="mb-1"><%= category %></h5>
+                    <!-- <small>3 days ago</small> -->
+                </div>
+            </a>
+
+        <% }); %>
+    </div>
+
+<%- include('partials/footer.ejs') -%>

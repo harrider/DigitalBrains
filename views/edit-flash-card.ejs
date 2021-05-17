@@ -1,0 +1,33 @@
+<%- include('partials/header.ejs') -%>
+
+<div class="container">
+
+    <h3 class="my-3">Update Flash Card</h3>
+
+    <form action="/edit/<%= question.category %>/<%= question._id %>" method="POST">
+        <div class="form-group">
+            <label for="questionCategory">Category</label>
+            <input type="text" class="form-control" id="questionCategory" name="questionCategory" autocomplete="off" value="<%= question.category %>" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="questionTitle">Title</label>
+            <input type="text" class="form-control" id="questionTitle" name="questionTitle" autocomplete="off" value="<%= question.title %>" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="questionBody">Question</label>
+            <input type="text" class="form-control" id="questionBody" name="questionBody" autocomplete="off" value="<%= question.body %>" required>
+        </div>
+        
+        <div class="form-group">
+            <label for="questionAnswer">Answer</label>
+            <input type="text" class="form-control" id="questionAnswer" name="questionAnswer" autocomplete="off" value="<%= question.answer %>" required>
+        </div>
+        
+        <button type="submit" class="btn btn-primary">Update</button>
+    </form>
+
+</div>
+
+<%- include('partials/footer.ejs') -%>

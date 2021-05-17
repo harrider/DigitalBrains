@@ -1,0 +1,52 @@
+<%- include('partials/header.ejs') -%>
+
+    <main role="main">
+
+        <div class="jumbotron">
+            <div class="container">
+                <h1 class="display-3">Welcome to Digital Brains</h1>
+                <p>
+                    Digital Brains helps you try to remember important information by giving you space
+                    to create digital flash cards!  You can create different sets of flash cards to help
+                    you try to learn whatever it is you're trying to learn!
+                </p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="row">
+                <div class="col-md-4">
+                    <h2>Features</h2>
+                    <p>
+                        <ul>
+                            <li>Sets</li>
+                            <li>Flash Cards</li>
+                        </ul>
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>Sets</h2>
+                    <p>
+                        Sets consist of collections of flash cards.  You can create new sets by clicking 
+                        '<i class="bi bi-plus"></i>' in the nav bar at the top of your screen.
+                    </p>
+                </div>
+
+                <div class="col-md-4">
+                    <h2>Flash Cards</h2>
+                    <p>
+                        Flash cards are the bread and butter of Digital Brains!  With a flash card, you 
+                        can capture a question and its answer.  Flash cards belong to sets, so when you 
+                        look at a set, you will view all of the associated flash cards.  When you hover over
+                        a flash card, the answer will show itself.
+                    </p>
+                    <p><a class="btn btn-primary" href="/compose" role="button">Create New Flash Card &raquo;</a></p>
+                </div>
+            </div>
+
+        </div>
+
+    </main>
+
+<%- include('partials/footer.ejs') -%>

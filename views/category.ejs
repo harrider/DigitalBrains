@@ -1,0 +1,34 @@
+<%- include('partials/header.ejs') -%>
+
+<!-- <div class="container-fluid"> -->
+<div class="container">
+    <div class="row">
+
+        <% questions.forEach(question => { %>
+
+            <!-- <div class="card hide mx-auto"> -->
+            <div class="card hide m-2 col-12 col-sm-6 col-md-4 col-lg-2">
+                <img src="/images/tree.png" class="card-img-top" alt="tree.png">
+                <div class="card-body">
+                    <a href="/edit/<%= question.category %>/<%= question._id %>"><i class="bi bi-pencil-square"></i></a>
+                    <a href="/delete/<%= question.category %>/<%= question._id %>"><i class="bi bi-x-square"></i></a>
+                    <h5 class="card-title"><%= question.title %></h5>
+                    <p class="card-text question"><%= question.body %></p>
+                    <p class="card-text answer"><%= question.answer %></p>
+                </div>
+            </div>
+            
+        <% }); %>
+
+            <div class="card new-card m-2 col-12 col-sm-6 col-md-4 col-lg-2 my-auto">
+                <div class="card-img-top"></div>
+                <div class="card-body">
+                    <a href="/compose" class="btn btn-secondary btn-block">
+                        <i class="bi bi-plus"></i>
+                    </a>
+                </div>
+            </div>
+    </div>
+</div>
+
+<%- include('partials/footer.ejs') -%>

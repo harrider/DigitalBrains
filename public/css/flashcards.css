@@ -1,0 +1,16 @@
+div.new-card.card-body {
+    height: fit-content;
+    width: fit-content;
+}
+
+div.card.hide {
+    width: 18rem;
+}
+
+p.card-text.answer {
+    display: none;
+}
+
+div.card.hide:hover p.card-text.answer {
+    display: block;
+}

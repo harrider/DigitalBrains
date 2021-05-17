@@ -1,0 +1,15 @@
+<%- include('partials/header.ejs') -%>
+
+    <div class="jumbotron">
+        <h1 class="display-4"><%= statusCode %> - <%= statusMessage %> - <i class="bi bi-emoji-frown"></i></h1>
+        <p class="lead">
+            <%= message %>
+        </p>
+        <hr class="my-4">
+        <p>Press the button to return to Home page or selected a link from the nav bar.</p>
+        <p class="lead">
+            <a class="btn btn-primary btn-lg" href="/" role="button">Home</a>
+        </p>
+    </div>
+
+<%- include('partials/footer.ejs') -%>
